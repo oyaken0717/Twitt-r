@@ -1,0 +1,8 @@
+<%= form_with(model: @blog, local: true) do |form| %>
+  <div class="blog_title">
+    <br><%= form.label :投稿する %></br>
+    <%= form.text_field :title %>
+  </div>
+  
+  <%= form.submit %>
+<% end %>
