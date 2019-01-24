@@ -1,2 +1,15 @@
-<h1>Blogs#index</h1>
-<p>Find me in app/views/blogs/index.html.erb</p>
+<%= link_to 'ブログを投稿する', new_blog_path %>
+←ヘッダーに入れたい
+<h1>一覧表示</h1>
+
+<table>
+  <tr>
+    <th>rle</th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+  </tr>
+<% end %>
+</table>
