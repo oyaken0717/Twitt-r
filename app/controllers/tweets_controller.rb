@@ -48,6 +48,9 @@ before_action :set_tweet, only: [:show, :edit, :update, :destroy]
     @tweet = Tweet.new(tweet_params)
     render :new if @tweet.invalid?
   end
+  
+  def top
+  end
     
 
   private
